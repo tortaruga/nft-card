@@ -68,7 +68,7 @@ main {
 
 .card__img-wrapper:hover::after {
     width: 100%;
-    height: 98%;
+    height: 100%;
     background: hsl(178, 100%, 50%, .5) url(./images/icon-view.svg) no-repeat;
     background-position: center;
     left: 0;

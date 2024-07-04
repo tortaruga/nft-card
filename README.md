@@ -6,19 +6,18 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
+
+First attempt at BEM. I'm not sure how this helps with writing less code, since it doesn't seem very reusable to me (unless I'm doing it wrong, which is entirely possible). 
+But the fact that it doesn't rely on nesting is good, so even if I add or remove a container later on the style I applied still holds. 
+
+For some reason the blue ::before element that appears when you hover the image is slightly bigger than it should on chrome, but not on firefox, so if I fix its height to be 98% (perfect on chrome) it's slightly too short on firefox. Go figure.
 
 ### The challenge
 
@@ -27,16 +26,10 @@ Users should be able to:
 - View the optimal layout depending on their device's screen size
 - See hover states for interactive elements
 
-### Screenshot
-
-![](./screenshot.jpg)
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
-## My process
+- Solution URL: [https://www.frontendmentor.io/solutions/nft-card-with-bem-OXmOelF2a8](https://www.frontendmentor.io/solutions/nft-card-with-bem-OXmOelF2a8)
+- Live Site URL: [https://tortaruga.github.io/nft-card/](https://tortaruga.github.io/nft-card/)
 
 ### Built with
 
@@ -48,9 +41,11 @@ Users should be able to:
 
 ### What I learned
 
+So, apparently I can't add a ::before pseudoelement to an img tag? That's a bummer.
 
 ### Continued development
 
+I'll keep practicing this BEM! (alexis mateo style) until it hopefully starts to make sense to me.
 
 ## Author
 
