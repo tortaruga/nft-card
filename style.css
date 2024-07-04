@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --main-bg : hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --dark-blue: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: outfit, sans-serif;
+}
+
+*::before, *::after {
+    position: absolute;
+    content: '';
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: var(--cyan);
+}
+
+body {
+    background: var(--main-bg);
+    color: var(--soft-blue);
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__card {
+   width: clamp(20rem, 90%, 15rem);
+   background: var(--card-bg);
+   border-radius: .7rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   padding: 1rem;
+}
+
+.card__img-wrapper {
+    position: relative; 
+  border-radius: .3rem;
+  cursor: pointer;  
+}
+
+.card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: .3rem;
+}
+
+.card__img-wrapper:hover::after {
+    width: 100%;
+    height: 98%;
+    background: hsl(178, 100%, 50%, .5) url(./images/icon-view.svg) no-repeat;
+    background-position: center;
+    left: 0;
+    border-radius: inherit;
+    transition: background-color .3s; 
+}
+
+.main-text__title {
+    margin: 0;
+}
+
+.main__link {
+  font-size: 1.5rem;
+ font-weight: 600;
+}
+
+.main__secondary-text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid var(--dark-blue);
+}
+
+.secondary-text__eth, .secondary-text__time-left {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.eth__value {
+    color: var(--cyan);
+    font-weight: 400;
+}
+
+.card__footer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.card__avatar {
+    width: 2rem;
+    border-radius: 50%;
+    border: 1px solid var(--white)
+}
+
+footer {
+    padding: 2rem;
+    text-align: center;
+    font-size: .7rem;
+}
